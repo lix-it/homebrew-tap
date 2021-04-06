@@ -5,25 +5,25 @@
 class Pout < Formula
   desc ""
   homepage ""
-  version "0.2.0"
+  version "0.1.2"
   license "MIT"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/lix-it/pout/releases/download/v0.2.0/pout_0.2.0_Darwin_x86_64.tar.gz"
-    sha256 "330962c6499fe7e0a5912a7055ec0c3e5fbdb00517fcfc4deb69e83d83c5d7ab"
+    url "https://github.com/lix-it/pout/releases/download/0.1.2/pout_0.1.2_Darwin_x86_64.tar.gz"
+    sha256 "44bd043f3f67622169e24a37a15260b4dce96e1c2f7e651f020f3e031b9c38d0"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/lix-it/pout/releases/download/v0.2.0/pout_0.2.0_Darwin_arm64.tar.gz"
-    sha256 "6b48c3ad38de12b4eca40b8a58e84f62b7ef86054ba48e66b219ab3f7ead31c2"
+    url "https://github.com/lix-it/pout/releases/download/0.1.2/pout_0.1.2_Darwin_arm64.tar.gz"
+    sha256 "3b8223a7ecca93781e96f4525a2dbd70916a965550c4e7c8d9b861c0c9c4d23e"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/lix-it/pout/releases/download/v0.2.0/pout_0.2.0_Linux_x86_64.tar.gz"
-    sha256 "8b0797f797e83a35942f924c85314ec31b6482b0c97b154395149c481aa62fae"
+    url "https://github.com/lix-it/pout/releases/download/0.1.2/pout_0.1.2_Linux_x86_64.tar.gz"
+    sha256 "74e46d608458478083977785e846b41e6a2d4432c8263c08a2e4d47385d410e8"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/lix-it/pout/releases/download/v0.2.0/pout_0.2.0_Linux_arm64.tar.gz"
-    sha256 "5123e8d1fb341df8d13a3529b424ae3fd27f27de37966cb08a8012cf7db90eca"
+    url "https://github.com/lix-it/pout/releases/download/0.1.2/pout_0.1.2_Linux_arm64.tar.gz"
+    sha256 "c0b3412a30bb7b6a3ac62910202e47ee6adfad7cfbdab16715bfc641971e80e1"
   end
 
   def install
